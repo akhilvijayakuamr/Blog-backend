@@ -29,7 +29,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', cast=bool, default=True)
 
 
-ALLOWED_HOSTS = [config('ALLOWED_HOSTS', default='localhost')]
+ALLOWED_HOSTS = ["*"]
 
 # Application definition
 
