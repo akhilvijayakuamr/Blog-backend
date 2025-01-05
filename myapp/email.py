@@ -13,7 +13,7 @@ def send_otp_mail(email):
 
     subject = "Blog Master: Confirm Your Registration"
 
-    frontend_url = f"http://localhost:5173/verify?email={email}&otp={otp}"
+    frontend_url = f"https://blog-app-three-brown.vercel.app/verify?email={email}&otp={otp}"
 
     message = f"""
     <html>
