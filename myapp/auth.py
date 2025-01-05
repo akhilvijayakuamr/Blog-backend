@@ -12,7 +12,6 @@ def is_token_expired(request) -> bool:
 
     try:
         token = AccessToken(access_token)
-        print("authoooooo", token)
         if token['exp'] < datetime.utcnow().timestamp():
             return True
         

@@ -196,7 +196,6 @@ class UpdatePost(APIView):
         description = request.data.get('description')
         image = request.FILES.get('image')
         post_id = request.data.get('postId')
-        print(description)
         
         try:
             post = Post.objects.filter(id=int(post_id)).first()
