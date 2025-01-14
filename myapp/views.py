@@ -146,6 +146,7 @@ class CreatePost(APIView):
 class GetAllPost(APIView):
 
     def post(self, request):
+        print("is working")
         if is_token_expired(request):
             return Response({"message":"User does not exist"}, status=status.HTTP_401_UNAUTHORIZED)
         id = request.data.get('userId')
